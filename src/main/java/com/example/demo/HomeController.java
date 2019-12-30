@@ -38,7 +38,7 @@ public class HomeController {
         return "redirect:/";
     }
 
-    @RequestMapping("/details/{id}")
+    @RequestMapping("/detail/{id}")
     public String showStudent(@PathVariable("id") long id, Model model){
         model.addAttribute("student", studentRepository.findById(id).get());
         return "show";
