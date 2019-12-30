@@ -17,7 +17,7 @@ public class Student {
     private long id;
 
     @NotNull
-    @Size(min = 2, max = 10)
+    @Size(min = 3, max = 10)
     private String name;
 
     @NotNull
